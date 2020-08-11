@@ -8,7 +8,7 @@ import org.springframework.stereotype.*;
 @Service
 public class LibraryServiceImpl implements ILibraryService {
 	@Autowired
-	private ILibraryDao dao=new LibraryDaoImpl();
+	private ILibraryDao dao;
 	
 
 	@Override
