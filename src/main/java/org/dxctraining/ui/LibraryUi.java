@@ -11,11 +11,11 @@ import javax.annotation.PostConstruct;
 @Component
 public class LibraryUi {
 	@Autowired
-	private ILibraryService service=new LibraryServiceImpl();
+	private ILibraryService service;
 	public static void main(String[] args) {
-		LibraryUi demo=new LibraryUi();
-		demo.run();
+		
 	}
+		
 	@PostConstruct
 	public void run() {
 		Author author1=new Author("1A","yasaswini");
@@ -42,3 +42,4 @@ public class LibraryUi {
 	}
 
 }
+
